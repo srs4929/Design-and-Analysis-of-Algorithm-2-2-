@@ -81,3 +81,10 @@ public class ShortestPath {
     }
 
 }
+
+//Example :
+// 1-2-5
+// |  |
+// 4 -3
+/* Target node 4 starting 1 shortest path 1-4 */
+
