@@ -42,12 +42,12 @@ class Solution {
         boolean [] restack=new boolean[numCourses];
         for(int i=0;i<numCourses;i++)
         {
-            if(!dfs(adj,i,visit,restack))
+            if(dfs(adj,i,visit,restack))
             {
-                return true;
+                return false;
             }
         }
-        return false;
+        return true;
         
     }
     public boolean dfs(List<List<Integer>>adj,int node,boolean [] visit,boolean[]restack)
