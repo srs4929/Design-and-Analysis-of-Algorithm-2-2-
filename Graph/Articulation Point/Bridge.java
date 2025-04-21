@@ -34,7 +34,7 @@ class Graph {
                 }
             } else if (v != parent[s]) { //back edge found
                 
-                low[s]=Math.min(low[v],dis[v]);
+                low[s]=Math.min(low[v],dis[s]);
             }
         }
 
@@ -47,7 +47,8 @@ class Graph {
         int [] low=new int[v+1];
         int [] parent=new int[v+1];
         for(int i=1;i<=v;i++)
-        {
+        {   
+            if(!visit[i])
             DFS(i,visit,dis,low,parent);
         }
 
