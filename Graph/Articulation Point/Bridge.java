@@ -34,7 +34,7 @@ class Graph {
                 }
             } else if (v != parent[s]) { //back edge found
                 
-                low[s]=Math.min(low[v],dis[s]);
+                low[s]=Math.min(low[s],dis[v]);
             }
         }
 
