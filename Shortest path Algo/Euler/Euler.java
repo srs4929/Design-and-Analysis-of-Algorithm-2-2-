@@ -1,4 +1,4 @@
-import java.net.SocketTimeoutException;
+
 import java.util.*;
 class Graph
 {
@@ -45,7 +45,7 @@ class Graph
         dfs(start,visit) ; // if has non zero do dfs from it
         for(int i=1;i<=v;i++)
         {
-            if(!visit[i] && adj.get(i).size()>1) // if the vertex is not visited but it has adjoint means has no path not connect
+            if(!visit[i] && adj.get(i).size()>0) // if the vertex is not visited but it has adjoint means has no path not connect
               return false; 
         }
         return true;
