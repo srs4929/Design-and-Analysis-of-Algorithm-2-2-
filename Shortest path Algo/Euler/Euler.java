@@ -68,7 +68,7 @@ class Graph
             }
         }
         if(oddcount==0) System.out.println("Graph has an eulerian circuit");
-        else if(oddcount==2) System.out.println("Graph is trail");
+        else if(oddcount==2) System.out.println("Graph is trail or has an eulerian path");
         else System.out.println("Graph is not eulerian");
     }
 
