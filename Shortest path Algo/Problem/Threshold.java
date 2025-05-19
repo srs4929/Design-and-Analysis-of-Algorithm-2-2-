@@ -2,7 +2,8 @@
 
 Return the city with the smallest number of cities that are reachable through some path and whose distance is at most distanceThreshold, If there are multiple such cities, return the city with the greatest number.
 
-Notice that the distance of a path connecting cities i and j is equal to the sum of the edges' weights along that path.*/
+Notice that the distance of a path connecting cities i and j is equal to the sum of the edges' weights along that path.
+Leetcode: Find the city with smallest numbers at a threshold distance*/
 import java.util.*;
 
 public class Threshold {
